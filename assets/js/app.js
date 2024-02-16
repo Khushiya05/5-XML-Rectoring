@@ -19,6 +19,7 @@ const onEdit = (ele) => {
     localStorage.setItem('editId', getEditId)
     let editUrl = `${baseUrl}/posts/${getEditId}`
     makeApiCall("GET", editUrl);
+    window.scroll(0, 0);
 }
 const onDelete = (ele) => {
         let deletedId = ele.closest('.card').id;
